@@ -9,8 +9,9 @@ public class lab02
 		int result = y * x;
 		String name = "Tony Yu";
 		String address = "123 Egypt Lane 123";
-		String city = "City of Egypt";
+		String city = "San Diego";
 		String zip = "92130";
+		String state = "CA";
 		
 		System.out.println("The answer is " + result);
 		System.out.println("\r");
@@ -18,12 +19,11 @@ public class lab02
 		System.out.println("\r");
 		System.out.println(name);
 		System.out.println(address);
-		System.out.println(city);
-		System.out.println(zip);
+		System.out.println(city + ", " + "CA " + zip);
 		System.out.println("\r");
 		System.out.println("\r");
 		System.out.println("\r");
-		System.out.println(sa);
+		System.out.println("The surface area is " + sa);
 	
 	}	
 	
