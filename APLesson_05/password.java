@@ -4,12 +4,7 @@ public class password
 	static String user;
 	static String pass;
 	public static void main (String[]args)
-	{	
-		Scanner keyboard = new Scanner(System.in);
-	
-		
-		
-		
+	{		
 		login();
 	}
 	
