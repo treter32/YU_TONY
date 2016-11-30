@@ -10,21 +10,21 @@ public class Rectangle_Static
 		
 		System.out.println("Enter width (ft):");
 		String swidth = keyboard.nextLine();
-		width = Double.parseDouble(swidth);
+		double width = Double.parseDouble(swidth);
 		
 		System.out.println("Enter length (ft):");
 		String slength = keyboard.nextLine();
-		length = Double.parseDouble(slength);
-		calcPerim();
-		print();
+		double length = Double.parseDouble(slength);
+		calcPerim(width, length);
 	}
 	
-	public static void calcPerim()
+	public static void calcPerim(double length, double width)
 	{
 		 perimeter = (2*length+2*width);
+		 print(perimeter);
 	}
 	
-	public static void print()
+	public static void print(double perimeter)
 	{
 		//System.out.println("The rectangle is " + perimeter + " ft around.");
 		System.out.printf("Your rectangle is %.5f %s", perimeter, " ft around.");
