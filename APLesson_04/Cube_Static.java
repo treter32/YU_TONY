@@ -1,28 +1,28 @@
 import java.util.Scanner;
+
 public class Cube_Static
 {
-	static double side;
-	static double sa;
+	
 	public static void main(String[]args)
 	{
 		Scanner keyboard = new Scanner(System.in);
 		
-		System.out.println("Enter the side:");
-		String sside = keyboard.nextLine();
-		side = Double.parseDouble(sside);
+		System.out.println("Enter the side: ");
+		double s = keyboard.nextDouble();
+
+		double sa = calcSurf(s);
 		
-		calcSurf();
-		print();
+		print(s,sa);
 	}
 	
-	public static void calcSurf()
+	public static double calcSurf(double s)
 	{
-		 sa = 6*(side*side);
+		return (6 * s * s);
 	}
 	
-	public static void print()
+	public static void print(double s, double sa)
 	{
-		//System.out.println("The rectangle is " + perimeter + " ft around.");
-		System.out.printf("The surface area of a cube with %.5f %s %.5f", side, "sides is", sa);
+		System.out.println("The surface area of a cube with sides " + s + " is " + sa);	
 	}
+
 }
