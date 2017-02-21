@@ -2,9 +2,9 @@ public class toyStoreClass
 {
     private ArrayList<toy> toyList;
 	
-	public toyStoreClass ()
+	public toyStoreClass()
 	{
-		this("");
+		this(" ");
 	}
 	
 	public toyStoreClass(String toys)	
@@ -12,11 +12,13 @@ public class toyStoreClass
 		this.loadToys(toys);
     }
   
-	public loadToys(ArrayList<String> toyList1)
+	public loadToys(ArrayList<String> toys)
 	{
-		for(int i = 0; i < toyList1.size(); i++)
+		for(int i = 0; i < toys.size(); i++)
 		{
-			
+			String name = toys.get(i);
+			String type = toys.get(i+1);
+			Toy object = this.toyWithName(name);
 		}
 	}
 	
