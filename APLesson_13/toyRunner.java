@@ -8,8 +8,8 @@ public class toyRunner
 	toy.add(new aFigure("Izaya"));
 	toy.add(new carClass("1983 Toyota Sprinter Hatchback"));
 	
-	for(int i = 0; i < toy.size(); i++)
+	for(toyClass x : toy)
 	{
-		System.out.println(toy.get(i));
+		System.out.println(x);
 	}
 }
