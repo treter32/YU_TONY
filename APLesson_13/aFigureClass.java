@@ -1,4 +1,4 @@
-public class aFigure extends Toy
+public class aFigureClass extends Toy
 {
 	public aFigure()
 	{

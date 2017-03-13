@@ -4,12 +4,17 @@ public class toyClass
     private String name;
     private int count;
 
-    public toyClass(String n, int c)	
+    public toyClass()	
 	{
-		name = n;
-		count = c = 1;
+		name = "";
+		count = 1;
     }
 	
+	public toyClass(String n)
+	{
+		name = "n";
+		count = 1;
+	}
 	public toyClass ()
 	{
 		this("");
@@ -23,12 +28,12 @@ public class toyClass
 	public int getCount()
 	{
 		return count;
-	}	 
+	}
 	 
 	public int setCount(int c)
 	{
 		count = c;
-	}	 
+	}
 	 
 	public String getName(String n)
 	{
