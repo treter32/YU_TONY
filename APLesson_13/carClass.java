@@ -1,6 +1,6 @@
 public class carClass extends toyClass
 {
-	public aFigure()
+	public carClass()
 	{
 		super();
 	}

@@ -1,11 +1,11 @@
-public class aFigureClass extends Toy
+public class aFigureClass extends toyClass
 {
-	public aFigure()
+	public aFigureClass()
 	{
 		super();
 	}
 	
-	public aFigure(String n)
+	public aFigureClass(String n)
 	{
 		super(n);
 	}

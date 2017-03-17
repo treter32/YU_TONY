@@ -1,6 +1,5 @@
-public class toyClass 
+public abstract class toyClass 
 {
-    private String manufacturer;
     private String name;
     private int count;
 
@@ -12,13 +11,10 @@ public class toyClass
 	
 	public toyClass(String n)
 	{
-		name = "n";
+		name = n;
 		count = 1;
 	}
-	public toyClass ()
-	{
-		this("");
-	}
+	
    
 	public String getName()
 	{
@@ -30,15 +26,16 @@ public class toyClass
 		return count;
 	}
 	 
-	public int setCount(int c)
+	public void setCount(int c)
 	{
 		count = c;
 	}
 	 
-	public String getName(String n)
+	public void setName(String n)
 	{
 		name = n;
 	}
+	
 	 
 	abstract public String getType();
 	 

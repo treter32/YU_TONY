@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class toyStoreClass
 {
-    private ArrayList<toy> toyList;
+    private ArrayList<toyClass> toyList = new ArrayList<toyClass>();
 	
 	public toyStoreClass()
 	{
@@ -12,39 +15,52 @@ public class toyStoreClass
 		this.loadToys(toys);
     }
   
-	public loadToys(ArrayList<String> toys)
+	public void loadToys(String toys)
 	{
-		for(int i = 0; i < toys.size(); i++)
+		ArrayList<String> toys = new ArrayList,Sring>(Arrays.asList(toys.split(", ")));
+		for(int i = 0; i < toys.size(); i+=2)
 		{
 			String name = toys.get(i);
 			String type = toys.get(i+1);
-			Toy object = this.toyWithName(name);
-		}
-	}
-	
-	public getThatToy(String name)
-	{
-		for(Toy object : toyList)
-		{
-			if(object.getName==name)
+			toyClass object = this.getThatToy(name);
+			
+			if(object == null)
 			{
-				return object;
+				if(type.equals("Car"))
+				{
+					toyList.add(new carClass(name));
+				}
+				
+				else
+				{
+					toyList.add(new aFigureClass(name));
+				}
 			}
 			
 			else
 			{
-				return null;
+				object.setCount(object.getCount() + 1);
 			}
-			
-			
 		}
 	}
+	
+	public toyClass getThatToy(String name)
+	{
+		for(toyClass i : toyList)
+		{
+			if(i.getName().equals(name))
+			{
+				return i;
+			}
+		}
+		return null;
+	}
 
-    public getMostFrequentToy()
+    public String getMostFrequentToy()
 	{
 		String name;
 		int max = Integer.MIN_VALUE;
-		for(Toy object : toyList)
+		for(toyClass object : toyList)
 		{
 			if(max<object.getCount())
 			{
@@ -55,19 +71,19 @@ public class toyStoreClass
 		return name;
 	}
 	
-	public getMostFrequentType()
+	public String getMostFrequentType()
 	{
 		
 		int cars = 0;
 		int figures = 0;
-		for(Toy object : toyList)
+		for(toyClass object : toyList)
 		{	
 			if(object.getType="Car")
 				{
 					cars =+ 1;
 				}	
 				
-			if(object.getType="AF")
+			if(object.getType="Action Figure")
 				{
 					figures =+ 1;
 				}	
@@ -96,7 +112,7 @@ public class toyStoreClass
 			
 	}
 		
-	public toString()
+	public String toString()
 	{
 		return toyList;
 	}
