@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class toyStoreClass
 {
@@ -7,7 +7,7 @@ public class toyStoreClass
 	
 	public toyStoreClass()
 	{
-		this(" ");
+		
 	}
 	
 	public toyStoreClass(String toys)	
@@ -17,11 +17,11 @@ public class toyStoreClass
   
 	public void loadToys(String toys)
 	{
-		ArrayList<String> toys = new ArrayList,Sring>(Arrays.asList(toys.split(", ")));
-		for(int i = 0; i < toys.size(); i+=2)
+		ArrayList<String> toys2 = new ArrayList<String>(Arrays.asList(toys.split(", ")));
+		for(int i = 0; i < toys2.size(); i+=2)
 		{
-			String name = toys.get(i);
-			String type = toys.get(i+1);
+			String name = toys2.get(i);
+			String type = toys2.get(i+1);
 			toyClass object = this.getThatToy(name);
 			
 			if(object == null)
@@ -44,11 +44,11 @@ public class toyStoreClass
 		}
 	}
 	
-	public toyClass getThatToy(String name)
+	public toyClass getThatToy(String asd)
 	{
 		for(toyClass i : toyList)
 		{
-			if(i.getName().equals(name))
+			if(i.getName().equals(asd))
 			{
 				return i;
 			}
@@ -58,8 +58,8 @@ public class toyStoreClass
 
     public String getMostFrequentToy()
 	{
-		String name;
-		int max = Integer.MIN_VALUE;
+		String name = "";
+		int max = 0;
 		for(toyClass object : toyList)
 		{
 			if(max<object.getCount())
@@ -76,16 +76,16 @@ public class toyStoreClass
 		
 		int cars = 0;
 		int figures = 0;
-		for(toyClass object : toyList)
+		for(toyClass frequent : toyList)
 		{	
-			if(object.getType="Car")
+			if(frequent.getType()=="Car")
 				{
-					cars =+ 1;
+					cars++;
 				}	
 				
-			if(object.getType="Action Figure")
+			if(frequent.getType()=="Action Figure")
 				{
-					figures =+ 1;
+					figures++;
 				}	
 				
 			else
@@ -99,7 +99,7 @@ public class toyStoreClass
 			return "Cars";
 		}
 		
-		if(cars<figures)
+		else if(cars<figures)
 		{
 			return "Action Figures";
 		}
@@ -109,12 +109,14 @@ public class toyStoreClass
 			return "Equal amounts of action figures and cars!";
 		}
 			
-			
+	
 	}
+		
+		
 		
 	public String toString()
 	{
-		return toyList;
+		return toyList + "";
 	}
 
     

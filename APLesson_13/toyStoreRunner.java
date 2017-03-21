@@ -5,7 +5,7 @@ public class toyStoreRunner
 {
 	public static void main (String[]args)
 	{
-		toyStoreClass toys = new toyStoreClass("AE86, Car, FC3S, Car, Goku, Action Figure, Vegeta, Action Figure"); 
+		toyStoreClass toys = new toyStoreClass("Hotwheel, Car, G.I.Joe, AF, PennyRacer, Car, Matchbox, Car, Star Wars, AF, Pullback, Car, Star Wars, AF"); 
 		System.out.println(toys);
 	}
 }
