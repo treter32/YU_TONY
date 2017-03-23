@@ -83,7 +83,7 @@ public class toyStoreClass
 					cars++;
 				}	
 				
-			if(frequent.getType()=="Action Figure")
+			else if(frequent.getType()=="Action Figure")
 				{
 					figures++;
 				}	
