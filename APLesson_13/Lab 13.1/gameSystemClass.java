@@ -3,10 +3,16 @@ public class gameSystemClass
 	private String platform;
 	private int serialNo;
 	
-	public GameSystem(String p)
+	public gameSystemClass()
+	{
+		platform = "";
+		serialNo = (int)(Math.random() * Math.pow(10,7))+1;
+	}
+	
+	public gameSystemClass(String p)
 	{
 		platform = p;
-		serialNo = (1000000 + ran.NextInt(9000000));
+		serialNo = (int)(Math.random() * Math.pow(10,7))+1;
 	}
 	
 	public String getPlatform()

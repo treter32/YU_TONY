@@ -1,19 +1,22 @@
-public class consoleClass extends gameSystemClass
+public abstract class consoleClass extends gameSystemClass
 {
-	public consoleClass(String p)
+	
+	public consoleClass()
 	{
-		platform = p;
-		serialNo = (1000000 + ran.NextInt(9000000));
-		
-	}
+		super();
+	}	
 	
 	public consoleClass(String p)
 	{
-		return platform;
-	}
+		super(p);
+	}	
 	
-	public int getSerialNo()
+	public abstract String getController();
+	
+	
+	
+	public String toString()
 	{
-		return serialNo;
+		return "Platform: [" + getPlatform() + "]\n" + "Serial #: [" + getSerialNo() + "]\n" + "Controller: [" + getController() + "]";
 	}
 }
