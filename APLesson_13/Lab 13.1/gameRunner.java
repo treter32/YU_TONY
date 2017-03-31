@@ -9,5 +9,5 @@ public class gameRunner
 		System.out.println(ps);
 		System.out.println(xb);
 		System.out.println(pc);
-	}	
+	}
 }	
