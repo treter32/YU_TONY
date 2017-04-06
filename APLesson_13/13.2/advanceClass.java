@@ -6,15 +6,18 @@ public class advanceClass extends ticketClass
 		daysLeft = d;
 	}
 	
-	public getPrice()
+	public int getPrice()
 	{
 		super();
 		if(daysLeft>=10)
 		{
-			price = 30;
+			return 30;
 		}	
 
 		else	
-			price = 40;
+		if(daysLeft<10)	
+		{	
+			return 40;
+		}	
 	}
 }

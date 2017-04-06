@@ -1,4 +1,4 @@
-public class ticketClass
+public abstract class ticketClass
 {
 	private int serialNo;
 	public ticketClass()
@@ -6,12 +6,12 @@ public class ticketClass
 		serialNo = (int)(Math.random() * Math.pow(10,7))+1;
 	}
 	
-	getSerialNo String()
+	public int getSerialNo()
 	{
 		return serialNo;
 	}
 	
-	getPrice abstract String()
+	public abstract double getPrice()
 	{
 		return price;
 	}
