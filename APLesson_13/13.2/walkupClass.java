@@ -1,8 +1,12 @@
 public class walkupClass extends ticketClass
 {
-	public getPrice()
+	public walkupClass()
 	{
 		super();
-		reurn 50;
+	}
+	
+	public double getPrice()
+	{
+		return 50;
 	}
 }

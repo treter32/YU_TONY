@@ -1,15 +1,29 @@
 public class studentAdvanceClass extends advanceClass
 {
-	public int getPrice()
+	private int daysLeft;
+	
+	public studentAdvanceClass()
 	{
-		
 		super();
+	}
+	
+	public studentAdvanceClass(int d)
+	{
+		super();
+		daysLeft = d;
+	}
+	
+	public double getPrice()
+	{
+
 		if(daysLeft>=10)
 		{
 			return 15;
-		}	
+		}
 
-		else	
+		else
+		{	
 			return 20;
+		}	
 	}
 }

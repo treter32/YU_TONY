@@ -5,9 +5,9 @@ public class ticketRunner
 {
 	public static void main (String[]args)
 	{
-		advanceClass advance = advanceClass(10);
-		studentAdvanceClass student = studentAdvanceClass(10);
-		walkupClass walkup = walkupClass();
+		advanceClass advance = new advanceClass(10);
+		studentAdvanceClass student = new studentAdvanceClass(10);
+		walkupClass walkup = new walkupClass();
 		
 		System.out.println(walkup);
 		System.out.println(advance);
