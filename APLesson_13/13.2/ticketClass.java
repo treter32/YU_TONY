@@ -19,6 +19,6 @@ public abstract class ticketClass
 	
 	public String toString()
 	{
-		return "Serial #: " + this.getSerialNo() + "\nPrice: " + this.getPrice();
+		return "Serial #: " + this.getSerialNo() + "\n" + "Price: " + this.getPrice();
 	}
 }
