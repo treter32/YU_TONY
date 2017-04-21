@@ -1,9 +1,10 @@
 public abstract class ticketClass
 {
 	private int serialNo;
+	private int price = 0;
 	public ticketClass()
 	{
-		this.serialNo = (int)(Math.random() * Math.pow(10,7))+1;
+		serialNo = (int)(Math.random() * Math.pow(10,7))+1;
 	}
 	
 	public int getSerialNo()
@@ -11,11 +12,13 @@ public abstract class ticketClass
 		return serialNo;
 	}
 	
-	public abstract double getPrice();
-	
+	public double getPrice()
+	{
+		return price;
+	}
 	
 	public String toString()
 	{
-		return "g";
+		return "Serial #: " + this.getSerialNo() + "\nPrice: " + this.getPrice();
 	}
 }
