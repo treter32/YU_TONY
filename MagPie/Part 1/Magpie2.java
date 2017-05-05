@@ -72,7 +72,7 @@ public class Magpie2
 		phrase = statement.toLowerCase();
 		
 		int psn = phrase.indexOf(goal, startPos);
-		
+		psn = -1;
 		while(psn>=0)
 		{
 			String before = " ";
