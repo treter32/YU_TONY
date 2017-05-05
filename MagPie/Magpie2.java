@@ -36,10 +36,10 @@ public class Magpie2
 			response = "Why so negative?";
 		}
 
-		else if (statement.indexOf("mother") >= 0
-				|| statement.indexOf("father") >= 0
-				|| statement.indexOf("sister") >= 0
-				|| statement.indexOf("brother") >= 0)
+		else if (findKeyword(statement, "mother") >= 0
+				|| findKeyword(statement, "father") >= 0
+				|| findKeyword(statement, "sister") >= 0
+				|| findKeyword(statement, "brother") >= 0)
 		{
 			response = "Tell me more about your family.";
 		}
@@ -72,7 +72,7 @@ public class Magpie2
 		phrase = statement.toLowerCase();
 		
 		int psn = phrase.indexOf(goal, startPos);
-		
+		psn = -1;
 		while(psn>=0)
 		{
 			String before = " ";
@@ -87,12 +87,15 @@ public class Magpie2
 				after=statement.substring(psn+goal.length(),psn+goal.length()+1);
 			}
 			
-			if (((before.compareTo("a")<0) || (before.compareTo("z")>0))&&((after.compareTo("z")>0) || (after.compareTo("a")<0)))
+			if (((before.compareTo("a")<0) || (before.compareTo("z")==1))&&((after.compareTo("z")==1) || (after.compareTo("a")<0)))
 			{
 				return psn;
 			}
-			else
-				findKeyword(statement,goal,psn+1);
+			
+				return phrase.indexOf(goal, psn + 1);
+			
+			
+				
 			
 		}
 		return -1;
