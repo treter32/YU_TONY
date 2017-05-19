@@ -2,8 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Parser\dialogueManager.cs">
     <Files>
-      <File FileName="Assets\Parser\dialogueScript.cs" Line="117" Column="1" />
-      <File FileName="Assets\Parser\dialogueManager.cs" Line="24" Column="3" />
+      <File FileName="Assets\Parser\dialogueScript.cs" Line="92" Column="2" />
+      <File FileName="Assets\Parser\buttonControl.cs" Line="9" Column="2" />
+      <File FileName="Assets\Parser\dialogueManager.cs" Line="92" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
