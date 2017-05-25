@@ -45,7 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Text\DialogueParser.cs" />
+     <Compile Include="Assets\ShowSkin.cs" />
+     <Compile Include="Assets\Text\dialogueScript.cs" />
      <None Include="Assets\Text\dialogue1.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
