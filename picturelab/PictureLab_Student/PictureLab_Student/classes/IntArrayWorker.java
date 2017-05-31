@@ -64,24 +64,24 @@ public class IntArrayWorker
   
   public int getCount(int t)
   {
-	int a;
+	int count = 0;
 	for (int row = 0; row < matrix.length; row++)
     {
       for (int column = 0; column < matrix[0].length; column++)
       {
         if (t == matrix[row][column])
-			a++;
+			count++;
       }
     }
-	return a;
+	return count;
   }
   
  public int getColTotal(int column)
  {
-	int total;
+	int total = 0;
 	for(int row = 0; row < matrix.length; row++)
 	{
-		total = matrix([row][column]+1);
+		total = (matrix[row][column]+1);
 	}
 	return total;
  }
