@@ -231,6 +231,20 @@ public class Picture extends SimplePicture
   }
   
   
+  public void negate()
+  {
+    Pixel[][] pixels = this.getPixels2D();
+    for (Pixel[] rowArray : pixels)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+        pixelObj.setRed(255 - pixelObj.getRed());
+		pixelObj.setGreen(255 - pixelObj.getGreen());
+		pixelObj.setBlue(255 - pixelObj.getBlue());
+      }
+    }
+  }
+  
   /* Main method for testing - each class in Java can have a main 
    * method 
    */
