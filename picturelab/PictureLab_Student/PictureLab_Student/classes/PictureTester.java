@@ -46,10 +46,25 @@ public class PictureTester
     china.explore();
   }
   
-   public static void testMirrorVerticalRightToLeft()
+  public static void testMirrorHorizontal()
+  {
+    Picture china = new Picture("china.png");
+    china.explore();
+    china.mirrorHorizontal();
+    china.explore();
+  }
+  
+  public static void testMirrorVerticalRightToLeft()
   {
     Picture china = new Picture("china.png");
     china.mirrorVerticalRightToLeft();
+    china.explore();
+  }
+
+  public static void testMirrorHorizontalBotToTop()
+  {
+    Picture china = new Picture("china.png");
+    china.mirrorHorizontalBotToTop();
     china.explore();
   }
   
@@ -93,6 +108,7 @@ public class PictureTester
     testGrayscale();
     //testFixUnderwater();
     testMirrorVertical();
+	testMirrorHorizontal();
     testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
@@ -108,5 +124,6 @@ public class PictureTester
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
 	testMirrorVerticalRightToLeft();
+	testMirrorHorizontalBotToTop();
   }
 }
