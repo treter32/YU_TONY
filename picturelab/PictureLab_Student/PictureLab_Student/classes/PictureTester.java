@@ -19,17 +19,38 @@ public class PictureTester
   
    public static void testKeepOnlyBlue()
   {
-    Picture beach = new Picture("china.png");
-    beach.keepOnlyBlue();
-    beach.explore();
+    Picture china = new Picture("china.png");
+    china.keepOnlyBlue();
+    china.explore();
   }
+   public static void testNegate()
+   {
+	Picture china = new Picture("china.png");
+    china.negate();
+    china.explore();
+   }
+   
+   public static void testGrayscale()
+   {
+	Picture china = new Picture("china.png");
+    china.negate();
+    china.explore();
+   }
+  
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
-    Picture caterpillar = new Picture("caterpillar.jpg");
-    caterpillar.explore();
-    caterpillar.mirrorVertical();
-    caterpillar.explore();
+    Picture china = new Picture("china.png");
+    china.explore();
+    china.mirrorVertical();
+    china.explore();
+  }
+  
+   public static void testMirrorVerticalRightToLeft()
+  {
+    Picture china = new Picture("china.png");
+    china.mirrorVerticalRightToLeft();
+    china.explore();
   }
   
   /** Method to test mirrorTemple */
@@ -69,7 +90,7 @@ public class PictureTester
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     testNegate();
-    //testGrayscale();
+    testGrayscale();
     //testFixUnderwater();
     testMirrorVertical();
     testMirrorTemple();
@@ -86,5 +107,6 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+	testMirrorVerticalRightToLeft();
   }
 }
