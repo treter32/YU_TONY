@@ -1,6 +1,6 @@
-Taiwan-I am part of you.-0-R
-China-Yes you are-0-L
-Taiwan-Awesome-1-R
-China-You are my slave:line,0-Continue:line,4
-Taiwan-Yes-2-L
-China-Test test test test-2-R
+Taiwan-I am part of you.
+China-Yes you are.
+Taiwan-Awesome.
+China-You are my slave.
+Taiwan-Yes.
+China-Very nice.

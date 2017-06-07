@@ -3,20 +3,25 @@ using System.Collections;
 using UnityEngine.UI;
 public class dialogueScript : MonoBehaviour 
 {
-	Text text;
+	public thonk scriptThonk;
+	Text txt;
+	string dialogueCancer;
 	public TextAsset asset;
-	void Start() 
+
+	void Start()
 	{
-		print (asset.text);
+		txt = GetComponent <Text> ();
+		txt.text = "";
 	}
 
-	void Awake()
-	{
-		text = GetComponent <Text> ();
-	}
 
 	void Update()
 	{
-		text.text = asset.text;
+		
+		txt.text = asset.text;
+
+
 	}
+
+
 }

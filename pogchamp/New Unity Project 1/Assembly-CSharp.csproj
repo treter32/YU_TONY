@@ -47,6 +47,9 @@
   <ItemGroup>
      <Compile Include="Assets\ShowSkin.cs" />
      <Compile Include="Assets\Text\dialogueScript.cs" />
+     <Compile Include="Assets\Text\thonk.cs" />
+     <None Include="Assets\Text\dialogue2.txt" />
+     <None Include="Assets\Text\dialogue3.txt" />
      <None Include="Assets\Text\dialogue1.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
