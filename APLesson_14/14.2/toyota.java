@@ -1,8 +1,9 @@
 public class toyota extends car
 {
 	
-	public toyota(double pos)
+	public toyota(String pos)
 	{
-		this.move(1, 3);
+		String[] sPos = pos.split(", ");
+		this.move(Double.parseDouble(sPos[0]), Double.parseDouble(sPos[1]));
 	}
 }

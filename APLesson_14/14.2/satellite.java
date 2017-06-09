@@ -7,7 +7,7 @@ public class satellite
        double[] honLoc = {5, 6};
        locate.add(new honda(honLoc));
 	   
-       locate.add(new toyota(8.0));
+       locate.add(new toyota("8, 9"));
        locate.add(new GMC(3, 8));
 
 

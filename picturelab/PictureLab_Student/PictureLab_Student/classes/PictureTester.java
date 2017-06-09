@@ -125,23 +125,23 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-   // testZeroBlue();
-    //testKeepOnlyBlue();
+   testZeroBlue();
+    testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-   // testNegate();
-   // testGrayscale();
+   testNegate();
+   testGrayscale();
     //testFixUnderwater();
-   // testMirrorVertical();
-	//testMirrorHorizontal();
-    //testMirrorTemple();
-    //testMirrorArms();
+   testMirrorVertical();
+	testMirrorHorizontal();
+    testMirrorTemple();
+    testMirrorArms();
     //testMirrorGull();
-    //testMirrorDiagonal();
-    testCollage();
+   // testMirrorDiagonal();
+    //testCollage();
 	testMyCollage();
-   // testCopy();
-    //testEdgeDetection();
+   
+    testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
@@ -149,7 +149,7 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
-	//testMirrorVerticalRightToLeft();
-	//testMirrorHorizontalBotToTop();
+	testMirrorVerticalRightToLeft();
+	testMirrorHorizontalBotToTop();
   }
 }

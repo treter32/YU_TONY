@@ -313,15 +313,13 @@ public class Picture extends SimplePicture
 public void myCollage()
   {
 	Picture china = new Picture("china.png");
-    Picture china2 = new Picture("china.png");
 	Picture chinaMirrorVertical = new Picture(china);
 	chinaMirrorVertical.mirrorVertical();
-	Picture chinaMirrorHorizontal = new Picture (china2);
+	Picture chinaMirrorHorizontal = new Picture (china);
 	chinaMirrorHorizontal.mirrorHorizontal();
-	Picture chinaNegate = new Picture (china2);
+	Picture chinaNegate = new Picture (china);
 	chinaNegate.negate();
-	this.copy(china,0,0);
-    this.copy(china2,100,0);
+    this.copy(chinaMirrorHorizontal,100,0);
     this.copy(chinaNegate,200,0);
     this.copy(chinaMirrorHorizontal,300,0);
     this.copy(chinaMirrorVertical,400,0);

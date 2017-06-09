@@ -34,8 +34,9 @@ public class thonk : MonoBehaviour
 				txt.text = "";
 				dialogueCancer = asset2.text;
 				StartCoroutine ("PlayText");
+				done = false;
 			}
-			done = false;
+
 		}
 
 	}
@@ -50,5 +51,4 @@ public class thonk : MonoBehaviour
 		}
 		done = true;
 	}
-
 }
