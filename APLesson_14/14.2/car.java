@@ -1,19 +1,28 @@
-public class car implements location
+public abstract class car implements location
 {
-	public int x = 0;
-	public int y = 0;
+	private double[] location;
+	private int ID;
+	
+	public car()
+	{
+		ID = (int)(Math.random() * Math.pow(10,6))+1;
+		location = new double[]{0, 0};
+	}
+
 	public int getID()
 	{
-		int id = (int)(Math.random() * Math.pow(10,6))+1;
-		return id;
+		return ID;
 	}
+	
+	public void move(double mx, double my)
+	{
+		location = new double[]{mx, my};
+	}
+	
 	public double[] getLoc()
 	{
-		return new double[] {x,y};
-	}
-	public void move(int mx, int my)
-	{
-		x += mx;
-		y += my;
-	}
+		return location;
+	}	
 }
+
+

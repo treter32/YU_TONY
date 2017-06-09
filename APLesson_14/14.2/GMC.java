@@ -1,28 +1,5 @@
-public class GMC extends car
-{
-	private int x = 0;
-	private int y = 0;
-	
-	public GMC(int mx, int my)
-	{
-		x += mx;
-		y += my;
+public class GMC extends car{
+	public GMC(double mx, double my){
+		this.move(mx, my);
 	}
-	
-	public void move(int mx, int my)
-	{
-		x = mx;
-		y = my;
-	}
-	
-	public double[] getLoc()
-	{
-		double array[] = new double[2];
-		return array;
-	}
-	
-	
-	
-	
-	
 }
