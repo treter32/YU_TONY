@@ -14,7 +14,7 @@ public abstract class car implements location
 		return ID;
 	}
 	
-	public void move(int mx, int my)
+	public void move(double mx, double my)
 	{
 		location = new double[]{mx, my};
 	}

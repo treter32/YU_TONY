@@ -1,5 +1,5 @@
 public class GMC extends car{
-	public GMC(int mx, int my){
+	public GMC(double mx, double my){
 		this.move(mx, my);
 	}
 }

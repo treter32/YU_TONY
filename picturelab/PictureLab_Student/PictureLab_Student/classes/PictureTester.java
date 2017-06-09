@@ -11,7 +11,7 @@ public class PictureTester
   /** Method to test zeroBlue */
   public static void testZeroBlue()
   {
-    Picture beach = new Picture("beach.jpg");
+    Picture beach = new Picture("china.png");
     beach.explore();
     beach.zeroBlue();
     beach.explore();
@@ -80,10 +80,13 @@ public class PictureTester
   /** Method to test the collage method */
   public static void testCollage()
   {
-    Picture canvas = new Picture("640x480.jpg");
+    //Picture canvas = new Picture("640x480.jpg");
+	Picture canvas = new Picture("seagull.jpg");
     canvas.createCollage();
     canvas.explore();
   }
+  
+  
   
   /** Method to test edgeDetection */
   public static void testEdgeDetection()
@@ -93,6 +96,28 @@ public class PictureTester
     swan.explore();
   }
   
+  public static void testMirrorArms()
+  {
+    Picture snowman = new Picture("snowman.jpg");
+    snowman.explore();
+    snowman.mirrorArms();
+    snowman.explore();
+  }
+  
+  public static void testCopy()
+  {
+	 Picture beach = new Picture("swan.jpg");
+	  beach.explore();
+	  beach.copy(new Picture("swan.jpg"), 0, 0, 999999, 999999); //should copy the whole thing
+	  beach.explore();
+  }
+  
+  public static void testMyCollage()
+  {
+	Picture canvas = new Picture("640x480.jpg"); //empty
+    canvas.myCollage();
+    canvas.explore();  
+  }
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -100,22 +125,23 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    testKeepOnlyBlue();
+   // testZeroBlue();
+    //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    testNegate();
-    testGrayscale();
+   // testNegate();
+   // testGrayscale();
     //testFixUnderwater();
-    testMirrorVertical();
-	testMirrorHorizontal();
-    testMirrorTemple();
+   // testMirrorVertical();
+	//testMirrorHorizontal();
+    //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     testCollage();
-    //testCopy();
-    testEdgeDetection();
+	testMyCollage();
+   // testCopy();
+    //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
@@ -123,7 +149,7 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
-	testMirrorVerticalRightToLeft();
-	testMirrorHorizontalBotToTop();
+	//testMirrorVerticalRightToLeft();
+	//testMirrorHorizontalBotToTop();
   }
 }
